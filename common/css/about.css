@@ -1,0 +1,83 @@
+.About {
+    background: url(../img/about2.png) center center no-repeat;
+    background-size: auto 100%;
+}
+.content p {
+    text-align: justify;
+    line-height: 1.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+/*Form*/
+.feedbackForm {
+    margin: 40px auto 60px auto;
+    width: 280px;
+}
+.legendForm{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 40px;
+    color: #333333;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.control-group {
+    margin-bottom: 20px;
+}
+
+.control-group > input {
+    border: 1px solid #cccccc;
+    padding: 4px 6px;
+    border-radius: 3px;
+    height: 20px;
+}
+.control-group label{
+    width:25%;
+    display: inline-block;
+    text-align: right;
+
+    background-size: auto 100%;
+    height: 30px;
+    vertical-align: bottom;
+}
+.labelName{
+    background: url(../img/p-1.png) center center no-repeat;
+}
+.labelAddress{
+    background: url(../img/p-2.png) center center no-repeat;
+}
+.labelPhone{
+    background: url(../img/p-3.png) center center no-repeat;
+}
+.labelMail{
+    background: url(../img/p-4.png) center center no-repeat;
+}
+
+
+
+.btnForm{
+    height: 30px;
+    padding: 4px 14px;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+    border: 1px solid #bbbbbb;
+    border-radius: 3px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+}
+.btnForm:active{
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.btnForm:focus {
+    outline: none;
+}

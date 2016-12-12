@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="../common/css/map.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmhmvWsihzgWkugyM8ZPIloQsKU9UiP-M&callback=initMap"
+            async defer></script>
+    <script src="../js/libraryMarkers.js"></script>
+    <script src="../js/googleMaps.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Veteran Care Network</h1>
+    </header>
+    <div class="LegendMap">
+        <ul class="controlComponentMap">
+            <li class="controlElementMap" id="mapBtn"></li>
+            <li class="controlElementMap" id="searchBtn"></li>
+            <li class="controlElementMap" id="modeBtn"></li>
+            <li class="controlElementMap" id="helpBtn"></li>
+        </ul>
+    </div>
+    <div class="modalWindows">
+        <div class="containerControl" id="containerControl">
+            <div class="controlPanel">
+                <ul class="toggleContainer">
+                    <li class="toggleItem" id="switchTab" data-toggle="switchContainer">Переключатели</li>
+                    <li class="toggleItem" id="legendTab" data-toggle="legendContainer">Легенда</li>
+                </ul>
+                <div id="tabContent">
+                    <div id="switchContainer">
+                        <div class="toggleHospital switchContainer">
+                            <input class="inputSwitchControl" type="checkbox" id="hospital" data-type="hospital"
+                                   checked/>
+                            <label class="switchControl" for="hospital"></label>
+                            <p>Госпитали</p>
+                        </div>
+                        <div class="toggleMedicare switchContainer">
+                            <input class="inputSwitchControl" type="checkbox" id="medicare" data-type="medicare"
+                                   checked/>
+                            <label class="switchControl" for="medicare"></label>
+                            <p>Страхование здоровья</p>
+                        </div>
+                        <div class="toggleClinic switchContainer">
+                            <input class="inputSwitchControl" type="checkbox" id="clinic" data-type="clinic" checked/>
+                            <label class="switchControl" for="clinic"></label>
+                            <p>Клиники</p>
+                        </div>
+                        <div class="toggleClinic switchContainer">
+                            <input class="inputSwitchControl" type="checkbox" id="dentist" data-type="dentist" checked/>
+                            <label class="switchControl" for="dentist"></label>
+                            <p>Стоматология</p>
+                        </div>
+                    </div>
+                    <div id="legendContainer">
+                        <div class="lineContainer">
+                            <span>Госпиталь</span><img src="../common/img/hospital.png" alt="">
+                        </div>
+                        <div class="lineContainer">
+                            <span>Страхование здоровья</span><img src="../common/img/medicare.png" alt="">
+                        </div>
+                        <div class="lineContainer">
+                            <span>Поликлиники</span><img src="../common/img/clinic.png" alt="">
+                        </div>
+                        <div class="lineContainer">
+                            <span>Стоматология</span><img src="../common/img/dentist.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="containerControl" id="containerHelp">
+            <div class="helpContainer">
+                <iframe src="https://www.youtube.com/embed/rOgv2Nc7YV0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="map"></div>
+
+
+    <nav class="nav-block">
+        <ul class="nav-list">
+            <li class="nav-item Home"><a href="../index.html" class="nav-link-item"></a></li>
+            <li class="nav-item Map"><a href="Map.html" class="nav-link-item"></a></li>
+            <li class="nav-item About"><a href="about.html" class="nav-link-item"></a></li>
+            <li class="nav-item Contact"><a href="contact.html" class="nav-link-item"></a></li>
+        </ul>
+    </nav>
+</div>
+</body>
+</html>

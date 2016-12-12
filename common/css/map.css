@@ -1,0 +1,186 @@
+#map{
+    height: 100vh;
+}
+.LegendMap{
+    z-index: 50;
+    position: fixed;
+    width: 100%;
+    top: 40px;
+    background: rgba(255,255,255,.6);
+}
+.controlElementMap{
+    height: 50px;
+    float: left;
+    width: 25%;
+}
+#mapBtn{
+    background: url(../img/map.png) center center no-repeat;
+}
+#searchBtn{
+    background: url(../img/loupe.png) center center no-repeat;
+}
+#modeBtn{
+    background: url(../img/book.png) center center no-repeat;
+}
+#helpBtn{
+    background: url(../img/help.png) center center no-repeat;
+}
+#mapBtn,
+#searchBtn,
+#modeBtn,
+#helpBtn{
+    cursor:pointer;
+    background-size: auto 80%;
+}
+
+
+/*ControlPanel*/
+.containerControl{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    background: rgba(180,180,180,.6);
+    visibility: hidden;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+.controlPanel{
+    margin: auto;
+    max-width: 300px;
+    background: #fff;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    right: 10px;
+    border-radius: 10px;
+    padding: 10px 10px 0 10px;
+    box-shadow:0 0 2px 1px rgba(153,152,151,1);
+}
+
+/*toggle*/
+.toggleContainer{
+    display: block;
+    height: 40px;
+}
+.toggleItem{
+    width: 50%;
+    text-align: center;
+    height: 40px;
+    float: left;
+    line-height: 40px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.switchContainer{
+    margin:10px ;
+    height: 30px;
+}
+.switchContainer p {
+    position: relative;
+    margin-left: 75px;
+}
+/*switch*/
+.inputSwitchControl{
+    width: 0;
+    height: 0;
+    display: none;
+}
+.switchControl{
+    float: left;
+    width: 50px;
+    height: 20px;
+    background:#f0f0f0;
+    border-radius: 18px;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -ms-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+.inputSwitchControl:checked + .switchControl {
+    box-shadow:0 0 0 2px rgba(27,115,229,1);
+    background: rgba(27,115,229,1);
+}
+.inputSwitchControl:checked + .switchControl:before {
+    left:29px;
+    box-shadow:0 0 0 2px transparent,0 3px 3px rgba(0,0,0,.3);
+}
+.switchControl:before {
+    content: '';
+    display: block;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    left: 0px;
+    background: #fff;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .2), 0 0 0 2px #dddddd;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+/*****/
+
+
+/* Legend Container*/
+#legendContainer{
+    display: none;
+}
+
+.lineContainer{
+    height: 30px;
+    margin: 10px;
+}
+.lineContainer img{
+    float: right;
+    height: 100%;
+}
+.lineContainer {
+    line-height: 30px;
+}
+#switchContainer{
+    display: block;
+}
+#switchTab{
+    border:1px solid rgb(221,221,221);
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    font-weight: bold;
+}
+#legendTab{
+    border-bottom: 1px solid rgb(221,221,221);
+    border-radius: 5px 5px 0 0;
+    color: rgb(150,150,150);
+}
+
+
+/*HELP container*/
+.helpContainer{
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+    top: 90px;
+    bottom: 50px;
+}
+.helpContainer iframe{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+/*------*/
+.Map{
+    background: url(../img/blue_map2.png) center center no-repeat;
+    background-size: auto 100%;
+}
+
+

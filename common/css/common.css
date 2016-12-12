@@ -1,0 +1,125 @@
+body{
+    font-family: Arial,Tahoma, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+h1,
+h2,
+h3,
+ul,
+p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-style:normal;
+}
+li{
+    list-style-type: none;
+}
+.container{
+    min-width: 320px;
+    /*min-height:480px;*/
+    margin: auto;
+}
+/*Header*/
+
+.header{
+    z-index: 50;
+    width: 100%;
+    position: fixed;
+    top:0;
+    height: 40px;
+    background: #1B73E5;
+}
+.header h1{
+    font-size: 1.2em;
+    text-align: center;
+    color: #fff;
+    text-transform:uppercase;
+    line-height: 40px
+}
+.content{
+    background: url(../img/bgStars.png) center top no-repeat;
+    background-size: 130px;
+    text-align: center;
+    margin: 60px 0 0 0;
+    padding: 40px 20px;
+}
+/*Navigation*/
+.nav-block{
+    z-index: 50;
+    position: fixed;
+    bottom: 0%;
+    background: #1B73E5;
+    width: 100%;
+}
+.nav-list{
+    display: block;
+}
+.nav-item{
+    float: left;
+    width:25%;
+    height: 50px;
+}
+.nav-link-item{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.Home{
+    background: url(../img/home1.png) center center no-repeat;
+}
+.Home:active{
+    background: url(../img/home3.png) center center no-repeat;
+}
+.Map{
+    background: url(../img/blue_map1.png) center center no-repeat;
+}
+.Map:active{
+    background: url(../img/blue_map3.png) center center no-repeat;
+}
+.Home:hover{
+    background: url(../img/home3.png) center center no-repeat;
+    background-size: auto 100%;
+}
+.Map:hover{
+    background: url(../img/blue_map3.png) center center no-repeat;
+    background-size: auto 100%;
+}
+.About{
+    background: url(../img/about1.png) center center no-repeat;
+}
+.About:active {
+    background: url(../img/about3.png) center center no-repeat;
+}
+.About:hover{
+    background: url(../img/about3.png) center center no-repeat;
+    background-size: auto 100%;
+}
+.Contact{
+    background: url(../img/contact1.png) center center no-repeat;
+}
+.Contact:active{
+    background: url(../img/contact3.png) center center no-repeat;
+}
+.Contact:hover{
+    background: url(../img/contact3.png) center center no-repeat;
+    background-size: auto 100%;
+}
+.Home,
+.Map,
+.About,
+.Contact,
+.Home:Active,
+.Map:Active,
+.About:Active,
+.Contact:Active
+{
+    background-size: auto 100%;
+}
+
+
+
