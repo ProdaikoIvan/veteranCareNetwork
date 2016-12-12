@@ -7,6 +7,17 @@ let map;
 document.addEventListener("DOMContentLoaded", function () {
 
     /*Отображение модальнымх окон*/
+    /*Search*/
+    let containerSearch = document.getElementById('containerSearch');
+    let searchControl = document.getElementById("searchBtn");
+    searchControl.onclick = function () {
+        visibleModeControl(containerSearch);
+    };
+    containerSearch.onclick = function (event) {
+        if (event.target == this) {
+            visibleModeControl(containerSearch);
+        }
+    }
     /*Legend*/
     let controlContainer = document.getElementById('containerControl');
     let modeControl = document.getElementById("modeBtn");
@@ -18,6 +29,19 @@ document.addEventListener("DOMContentLoaded", function () {
             visibleModeControl(controlContainer);
         }
     }
+    /*Переключение Legend/Switch*/
+    let switchTab = document.getElementById('switchTab');
+    let tabContent = document.getElementById("tabContent")
+    switchTab.onclick = function () {
+        toggle.call(this,tabContent);
+    }
+
+    let legendTab = document.getElementById('legendTab');
+    legendTab.onclick = function () {
+        toggle.call(this,tabContent);
+    }
+
+
     /*Video*/
     let containerHelp = document.getElementById('containerHelp');
     let helpControl = document.getElementById("helpBtn");
@@ -38,17 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
             visibleMarkers.call(this, markersArr, this.getAttribute('data-type'));
         }
     }
-    /*Переключение Legend/Switch*/
-    let switchTab = document.getElementById('switchTab');
-    let tabContent = document.getElementById("tabContent")
-    switchTab.onclick = function () {
-        toggle.call(this,tabContent);
-    }
 
-    let legendTab = document.getElementById('legendTab');
-    legendTab.onclick = function () {
-        toggle.call(this,tabContent);
-    }
 })
 
 function initMap() {
